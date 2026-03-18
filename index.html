@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshay Gummadi | CSE Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cdot"></div>
+<div class="cursor-outline" id="cring"></div>
+
+<div class="nav-drawer" id="drawer">
+  <button class="drawer-x" id="drawerClose"><i class="fas fa-times"></i></button>
+  <a href="#about"      onclick="closeDrawer()">About</a>
+  <a href="#juspay"     onclick="closeDrawer()">Why Juspay</a>
+  <a href="#skills"     onclick="closeDrawer()">Skills</a>
+  <a href="#projects"   onclick="closeDrawer()">Projects</a>
+  <a href="#experience" onclick="closeDrawer()">Experience</a>
+  <a href="#contact"    onclick="closeDrawer()">Contact</a>
+</div>
+
+<nav class="topbar" id="topbar">
+  <a href="#" class="brand-mark">Akshay<b>.</b>G</a>
+  <ul class="main-nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#juspay">Why Juspay</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="hire-btn">Hire Me</a>
+  <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+</nav>
+
+<section class="hero-wrap pg-section" id="home">
+  <div class="wrap">
+    <div class="hero-content">
+      <p class="hero-tag">B.Tech CSE · IARE · Class of 2028</p>
+      <h1 class="hero-heading">
+        Akshay
+        <span class="surname">Gummadi</span>
+        <span class="descriptor">Front-End Engineer &amp; Problem Solver</span>
+      </h1>
+      <div class="h-line"></div>
+      <div class="typing-area">
+        <span id="ttext" class="ttext"></span><span class="tcaret"></span>
+      </div>
+      <div class="cta-group">
+        <a href="#projects" class="btn-fill"><i class="fas fa-arrow-down"></i> View Projects</a>
+        <a href="#contact"  class="btn-line"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+      </div>
+      <div class="quick-stats">
+        <div class="qs-item">
+          <div class="qs-num" data-to="4">0</div>
+          <div class="qs-desc">Projects Shipped</div>
+        </div>
+        <div class="qs-item">
+          <div class="qs-num" data-to="350">0</div>
+          <div class="qs-desc">DSA Problems</div>
+        </div>
+        <div class="qs-item">
+          <div class="qs-num" data-to="913" data-dec="true">0</div>
+          <div class="qs-desc">CGPA Score</div>
+        </div>
+        <div class="qs-item">
+          <div class="qs-num" data-to="98">0</div>
+          <div class="qs-desc">Class XII %</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit-system">
+      <div class="o-ring"><div class="o-pill"></div></div>
+      <div class="o-ring"><div class="o-pill-sm"></div></div>
+      <div class="o-ring"></div>
+      <div class="o-core">AG</div>
+      <div class="o-tag" style="top:5%;left:58%;">HTML / CSS</div>
+      <div class="o-tag" style="top:21%;left:1%;">JavaScript</div>
+      <div class="o-tag" style="bottom:19%;right:-1%;">Java · DSA</div>
+      <div class="o-tag" style="bottom:5%;left:14%;">Git · Figma</div>
+      <div class="o-tag" style="top:49%;right:-3%;">Python</div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    <div class="t-item"><i class="fab fa-html5"></i>HTML5<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-css3-alt"></i>CSS3<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-js-square"></i>JavaScript<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-java"></i>Java<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-python"></i>Python<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-git-alt"></i>Git<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-figma"></i>Figma<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fas fa-code"></i>DOM APIs<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fas fa-mobile-screen"></i>Responsive<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fas fa-brain"></i>ML Basics<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-html5"></i>HTML5<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-css3-alt"></i>CSS3<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-js-square"></i>JavaScript<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-java"></i>Java<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-python"></i>Python<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-git-alt"></i>Git<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fab fa-figma"></i>Figma<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fas fa-code"></i>DOM APIs<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fas fa-mobile-screen"></i>Responsive<span class="t-sep"></span></div>
+    <div class="t-item"><i class="fas fa-brain"></i>ML Basics<span class="t-sep"></span></div>
+  </div>
+</div>
+
+<section id="about" class="pg-section about-bg">
+  <div class="wrap pad-y">
+    <div class="about-layout">
+      <div class="appear-left">
+        <div class="sec-label">01 — About</div>
+        <p class="about-intro">
+          A <strong>builder</strong> who cares as much about <strong>clean code</strong> as clean interfaces — and never ships without testing the edge cases.
+        </p>
+        <p class="about-text">
+          Second-year CSE student at IARE, Hyderabad. I build responsive, accessible web products with modern HTML, CSS, and JavaScript — deeply committed to performance and great user experience.
+        </p>
+        <p class="about-text">
+          Outside the classroom I've solved 350+ DSA problems on LeetCode and GeeksforGeeks. I believe every engineering problem — from pixel-alignment bugs to algorithmic complexity — deserves the same rigorous thinking.
+        </p>
+        <div class="tags-row">
+          <span class="tag-item">Front-End Dev</span>
+          <span class="tag-item">Problem Solver</span>
+          <span class="tag-item">UI/UX Thinker</span>
+          <span class="tag-item">Fast Learner</span>
+          <span class="tag-item">Fintech Curious</span>
+        </div>
+      </div>
+      <div class="appear-right">
+        <div class="data-table">
+          <div class="data-row">
+            <span class="d-key">University</span>
+            <span class="d-val">IARE, Hyderabad<small>B.Tech CSE · 2024 – 2028</small></span>
+          </div>
+          <div class="data-row">
+            <span class="d-key">GPA</span>
+            <span class="d-val">9.13 / 10.0<small>Top percentile · Ongoing</small></span>
+          </div>
+          <div class="data-row">
+            <span class="d-key">Internship</span>
+            <span class="d-val">ShadowFox<small>Web Dev · Feb 2026 · Remote</small></span>
+          </div>
+          <div class="data-row">
+            <span class="d-key">DSA Solved</span>
+            <span class="d-val">350+<small>LeetCode + GeeksforGeeks</small></span>
+          </div>
+          <div class="data-row">
+            <span class="d-key">Location</span>
+            <span class="d-val">Hyderabad, India<small>Open to remote / relocation</small></span>
+          </div>
+          <div class="data-row">
+            <span class="d-key">Email</span>
+            <span class="d-val" style="font-size:.75rem">agummadi488@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="juspay" class="pg-section jp-section">
+  <div class="wrap pad-y">
+    <div class="jp-layout">
+      <div class="appear">
+        <div class="jp-eyebrow">02 — Target Role</div>
+        <h2 class="jp-title">Why<br>Juspay<span>?</span></h2>
+        <p class="jp-note">
+          Juspay processes billions of payment transactions across India's most critical financial infrastructure. Here is why I am the right engineer to grow with that mission.
+        </p>
+      </div>
+      <div class="jp-cards appear">
+        <div class="jp-item">
+          <div class="jp-num">01</div>
+          <div class="jp-ico"><i class="fas fa-layer-group"></i></div>
+          <div class="jp-name">Systems Thinking</div>
+          <div class="jp-desc">350+ DSA solutions sharpened my ability to reason about data structures, complexity tradeoffs, and edge cases — exactly the mindset payment infra demands.</div>
+          <span class="jp-chip">DSA · Algorithms</span>
+        </div>
+        <div class="jp-item">
+          <div class="jp-num">02</div>
+          <div class="jp-ico"><i class="fas fa-bolt"></i></div>
+          <div class="jp-name">Performance-First UI</div>
+          <div class="jp-desc">Every project I ship is optimized for responsiveness and accessibility. Fast checkout flows are not a nice-to-have — they are core revenue for fintech products.</div>
+          <span class="jp-chip">Web Perf · A11y</span>
+        </div>
+        <div class="jp-item">
+          <div class="jp-num">03</div>
+          <div class="jp-ico"><i class="fas fa-code-branch"></i></div>
+          <div class="jp-name">Shipped Under Pressure</div>
+          <div class="jp-desc">Built and deployed a portfolio site plus a full e-commerce app during my ShadowFox internship — in under four weeks, iterating rapidly from feedback.</div>
+          <span class="jp-chip">Internship · Deploy</span>
+        </div>
+        <div class="jp-item">
+          <div class="jp-num">04</div>
+          <div class="jp-ico"><i class="fas fa-graduation-cap"></i></div>
+          <div class="jp-name">Academic Rigour</div>
+          <div class="jp-desc">9.13 GPA, 10/10 SSC, 98 percent in Class XII — not just numbers, but proof of structured thinking and the discipline to consistently deliver high output.</div>
+          <span class="jp-chip">GPA 9.13 · Consistent</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="pg-section skills-bg">
+  <div class="wrap pad-y">
+    <div class="appear">
+      <div class="sec-label">03 — Technical Skills</div>
+      <h2 class="sec-heading">My <i>Toolkit</i></h2>
+    </div>
+    <div class="appear" style="transition-delay:.1s">
+      <table class="skill-list">
+        <thead>
+          <tr>
+            <th style="width:270px">Technology</th>
+            <th>Tags</th>
+            <th class="progress-col">Proficiency</th>
+            <th style="text-align:right">Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="sk-cell"><div class="sk-box"><i class="fab fa-html5"></i></div><div><div class="sk-title">HTML5</div><div class="sk-cat">Markup Language</div></div></div></td>
+            <td><div style="display:flex;gap:5px;flex-wrap:wrap"><span class="stack-tag">Semantic</span><span class="stack-tag">A11y</span><span class="stack-tag">SEO</span></div></td>
+            <td class="progress-col"><div class="progress-track"><div class="progress-fill" data-w="92"></div></div></td>
+            <td style="text-align:right"><span class="level-pill">Advanced</span></td>
+          </tr>
+          <tr>
+            <td><div class="sk-cell"><div class="sk-box"><i class="fab fa-css3-alt"></i></div><div><div class="sk-title">CSS3</div><div class="sk-cat">Styling &amp; Layout</div></div></div></td>
+            <td><div style="display:flex;gap:5px;flex-wrap:wrap"><span class="stack-tag">Flexbox</span><span class="stack-tag">Grid</span><span class="stack-tag">Animations</span></div></td>
+            <td class="progress-col"><div class="progress-track"><div class="progress-fill" data-w="90"></div></div></td>
+            <td style="text-align:right"><span class="level-pill">Advanced</span></td>
+          </tr>
+          <tr>
+            <td><div class="sk-cell"><div class="sk-box"><i class="fab fa-js-square"></i></div><div><div class="sk-title">JavaScript</div><div class="sk-cat">ES6+ / DOM</div></div></div></td>
+            <td><div style="display:flex;gap:5px;flex-wrap:wrap"><span class="stack-tag">DOM</span><span class="stack-tag">Events</span><span class="stack-tag">Async</span></div></td>
+            <td class="progress-col"><div class="progress-track"><div class="progress-fill" data-w="75"></div></div></td>
+            <td style="text-align:right"><span class="level-pill">Intermediate</span></td>
+          </tr>
+          <tr>
+            <td><div class="sk-cell"><div class="sk-box"><i class="fab fa-java"></i></div><div><div class="sk-title">Java</div><div class="sk-cat">OOP / DSA</div></div></div></td>
+            <td><div style="display:flex;gap:5px;flex-wrap:wrap"><span class="stack-tag">OOP</span><span class="stack-tag">Collections</span><span class="stack-tag">LeetCode</span></div></td>
+            <td class="progress-col"><div class="progress-track"><div class="progress-fill" data-w="72"></div></div></td>
+            <td style="text-align:right"><span class="level-pill">Intermediate</span></td>
+          </tr>
+          <tr>
+            <td><div class="sk-cell"><div class="sk-box"><i class="fab fa-python"></i></div><div><div class="sk-title">Python</div><div class="sk-cat">Scripting / ML</div></div></div></td>
+            <td><div style="display:flex;gap:5px;flex-wrap:wrap"><span class="stack-tag">Scripting</span><span class="stack-tag">Kaggle</span></div></td>
+            <td class="progress-col"><div class="progress-track"><div class="progress-fill" data-w="68"></div></div></td>
+            <td style="text-align:right"><span class="level-pill">Intermediate</span></td>
+          </tr>
+          <tr>
+            <td><div class="sk-cell"><div class="sk-box"><i class="fab fa-git-alt"></i></div><div><div class="sk-title">Git &amp; GitHub</div><div class="sk-cat">Version Control</div></div></div></td>
+            <td><div style="display:flex;gap:5px;flex-wrap:wrap"><span class="stack-tag">Branching</span><span class="stack-tag">CI/CD basics</span></div></td>
+            <td class="progress-col"><div class="progress-track"><div class="progress-fill" data-w="80"></div></div></td>
+            <td style="text-align:right"><span class="level-pill">Proficient</span></td>
+          </tr>
+          <tr>
+            <td><div class="sk-cell"><div class="sk-box"><i class="fab fa-figma"></i></div><div><div class="sk-title">Figma</div><div class="sk-cat">UI Design</div></div></div></td>
+            <td><div style="display:flex;gap:5px;flex-wrap:wrap"><span class="stack-tag">Wireframes</span><span class="stack-tag">Prototypes</span></div></td>
+            <td class="progress-col"><div class="progress-track"><div class="progress-fill" data-w="70"></div></div></td>
+            <td style="text-align:right"><span class="level-pill">Proficient</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="pg-section projects-bg">
+  <div class="wrap pad-y">
+    <div class="appear">
+      <div class="sec-label">04 — Projects</div>
+      <h2 class="sec-heading">What I've <i>Built</i></h2>
+    </div>
+    <div class="big-project appear">
+      <div class="bp-visual">
+        <div class="bp-emoji">🎮</div>
+        <span class="bp-badge">Interactive Game · Feb 2026</span>
+      </div>
+      <div class="bp-body">
+        <div>
+          <div class="bp-when">February 2026 — Featured Project</div>
+          <div class="bp-name">Tic Tac Toe</div>
+          <div class="bp-about">
+            Real-time win and draw detection engine, clean state management, and a fully responsive UI — all from scratch. Demonstrates disciplined JavaScript architecture with no frameworks, pure DOM manipulation and event-driven logic throughout.
+          </div>
+        </div>
+        <div class="bp-bottom">
+          <div class="stack-list">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">Vanilla JS</span>
+            <span class="stack-tag">DOM API</span>
+          </div>
+          <a href="https://github.com/GummadiAkshay" target="_blank" class="gh-btn"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="small-projects">
+      <div class="sp-card appear" style="transition-delay:.05s">
+        <div class="sp-ghost-letter">S</div>
+        <div class="sp-icon">🎵</div>
+        <div class="sp-when">Nov 2025</div>
+        <div class="sp-name">Spotify Clone</div>
+        <div class="sp-about">Pixel-perfect music player UI — sidebar nav, player controls, playlist views. Advanced Flexbox layout across all screen sizes.</div>
+        <div class="sp-foot">
+          <div class="sp-techs"><span class="sp-tech">HTML · CSS · Flexbox</span></div>
+          <a href="https://github.com/GummadiAkshay" target="_blank" class="sp-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="sp-card appear" style="transition-delay:.1s">
+        <div class="sp-ghost-letter">A</div>
+        <div class="sp-icon">🛒</div>
+        <div class="sp-when">Nov 2025</div>
+        <div class="sp-name">Amazon Clone</div>
+        <div class="sp-about">High-fidelity homepage clone — full navigation bar, hero, product grid, and footer. Multi-section CSS Grid with close attention to visual detail.</div>
+        <div class="sp-foot">
+          <div class="sp-techs"><span class="sp-tech">HTML · CSS · Grid</span></div>
+          <a href="https://github.com/GummadiAkshay" target="_blank" class="sp-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="sp-card appear" style="transition-delay:.15s">
+        <div class="sp-ghost-letter">N</div>
+        <div class="sp-icon">🏪</div>
+        <div class="sp-when">Oct 2025</div>
+        <div class="sp-name">Nexus Plaza</div>
+        <div class="sp-about">Modern multi-page e-commerce UI from concept to code. Clean aesthetic, structured layout, fully responsive across all breakpoints.</div>
+        <div class="sp-foot">
+          <div class="sp-techs"><span class="sp-tech">HTML · CSS · Multi-page</span></div>
+          <a href="https://github.com/GummadiAkshay" target="_blank" class="sp-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="pg-section exp-bg">
+  <div class="wrap pad-y">
+    <div class="appear">
+      <div class="sec-label">05 — Experience</div>
+      <h2 class="sec-heading">Work &amp; <i>Coding</i></h2>
+    </div>
+    <div class="exp-cols">
+      <div class="timeline appear-left">
+        <div class="t-entry">
+          <div class="t-side">
+            <div class="t-dot"></div>
+            <div class="t-yr">2026</div>
+          </div>
+          <div class="t-info">
+            <div class="t-company">ShadowFox</div>
+            <div class="t-position">Web Development Intern</div>
+            <div class="t-dates"><i class="fas fa-calendar" style="color:var(--blue-muted);font-size:.58rem;margin-right:5px"></i>Feb 1 – Feb 28, 2026 · Remote (Virtual)</div>
+            <ul class="t-points">
+              <li>Built and deployed a personal portfolio website and a full e-commerce web application using HTML, CSS, and JavaScript within a single month.</li>
+              <li>Implemented responsive UI/UX via CSS Flexbox and Grid — consistent, accessible layouts across all device widths.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="coding-box appear-right">
+        <div class="coding-box-head"><i class="fas fa-terminal"></i> Competitive Programming</div>
+        <div class="platform-row">
+          <div class="plat-left">
+            <div class="plat-ico ico-lc"><i class="fas fa-code"></i></div>
+            <div><div class="plat-name">LeetCode</div><div class="plat-sub">Algorithm challenges</div></div>
+          </div>
+          <div class="plat-score score-lc">150+</div>
+        </div>
+        <div class="platform-row">
+          <div class="plat-left">
+            <div class="plat-ico ico-gfg"><i class="fas fa-leaf"></i></div>
+            <div><div class="plat-name">GeeksforGeeks</div><div class="plat-sub">Core CS fundamentals</div></div>
+          </div>
+          <div class="plat-score score-gfg">200+</div>
+        </div>
+        <div class="platform-row">
+          <div class="plat-left">
+            <div class="plat-ico ico-all"><i class="fas fa-trophy"></i></div>
+            <div><div class="plat-name">Total Solved</div><div class="plat-sub">Across all platforms</div></div>
+          </div>
+          <div class="plat-score score-all">350+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="pg-section edu-bg">
+  <div class="wrap pad-y">
+    <div class="appear">
+      <div class="sec-label">06 — Education</div>
+      <h2 class="sec-heading">Academic <i>Record</i></h2>
+    </div>
+    <div class="edu-cards appear" style="transition-delay:.1s">
+      <div class="edu-item">
+        <div class="edu-bg-letter">B</div>
+        <div class="edu-period">2024 – May 2028</div>
+        <div class="edu-qual">B.Tech · Computer Science &amp; Engineering</div>
+        <div class="edu-inst">Institute of Aeronautical Engineering, Hyderabad</div>
+        <span class="edu-grade"><i class="fas fa-star" style="color:var(--blue-muted);font-size:.58rem"></i> GPA 9.13 / 10.0</span>
+      </div>
+      <div class="edu-item">
+        <div class="edu-bg-letter">I</div>
+        <div class="edu-period">Completed May 2024</div>
+        <div class="edu-qual">Intermediate · Class XII</div>
+        <div class="edu-inst">Alphores Junior College</div>
+        <span class="edu-grade"><i class="fas fa-star" style="color:var(--blue-muted);font-size:.58rem"></i> 98%</span>
+      </div>
+      <div class="edu-item">
+        <div class="edu-bg-letter">X</div>
+        <div class="edu-period">Completed March 2022</div>
+        <div class="edu-qual">SSC · Class X</div>
+        <div class="edu-inst">Alphores High School</div>
+        <span class="edu-grade"><i class="fas fa-star" style="color:var(--blue-muted);font-size:.58rem"></i> GPA 10 / 10</span>
+      </div>
+    </div>
+    <div class="cert-row appear" style="transition-delay:.2s">
+      <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+      <div>
+        <div class="cert-title">Intro to Machine Learning</div>
+        <div class="cert-from">Kaggle · Certified March 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="pg-section contact-bg">
+  <div class="wrap pad-y">
+    <div class="contact-layout">
+      <div class="appear-left">
+        <div class="sec-label">07 — Contact</div>
+        <h2 class="sec-heading" style="margin-bottom:14px">Let's <i>Talk</i></h2>
+        <p class="contact-about">Open to internship opportunities, collaborative projects, and conversations about engineering. Reach out — I reply within 24 hours.</p>
+        <div class="link-list">
+          <a href="mailto:agummadi488@gmail.com" class="link-entry">
+            <div class="link-left"><div class="link-icon"><i class="fas fa-envelope"></i></div><div><div class="link-lbl">Email</div><div class="link-txt">agummadi488@gmail.com</div></div></div>
+            <span class="link-arr"><i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a href="tel:+917702274670" class="link-entry">
+            <div class="link-left"><div class="link-icon"><i class="fas fa-phone"></i></div><div><div class="link-lbl">Phone</div><div class="link-txt">+91 7702274670</div></div></div>
+            <span class="link-arr"><i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a href="https://github.com/GummadiAkshay" target="_blank" class="link-entry">
+            <div class="link-left"><div class="link-icon"><i class="fab fa-github"></i></div><div><div class="link-lbl">GitHub</div><div class="link-txt">github.com/GummadiAkshay</div></div></div>
+            <span class="link-arr"><i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a href="https://linkedin.com/in/akshay-gummadi" target="_blank" class="link-entry">
+            <div class="link-left"><div class="link-icon"><i class="fab fa-linkedin"></i></div><div><div class="link-lbl">LinkedIn</div><div class="link-txt">linkedin.com/in/akshay-gummadi</div></div></div>
+            <span class="link-arr"><i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-area appear-right">
+        <div class="form-pair">
+          <div class="f-field"><label>Name</label><input type="text" placeholder="Your name"></div>
+          <div class="f-field"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        </div>
+        <div class="f-field f-full"><label>Subject</label><input type="text" placeholder="Internship at Juspay"></div>
+        <div class="f-field f-full"><label>Message</label><textarea rows="6" placeholder="Hi Akshay, I would like to discuss..."></textarea></div>
+        <button class="send-btn" onclick="onSend(this)"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-note">Akshay Gummadi &nbsp;·&nbsp; <em>2026</em> &nbsp;·&nbsp; Hyderabad, India</div>
+  <div class="socials">
+    <a href="https://github.com/GummadiAkshay" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/akshay-gummadi" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:agummadi488@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
